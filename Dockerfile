@@ -7,7 +7,7 @@ VOLUME /tmp
 EXPOSE 8080
 
 # Copy the jar file into the container
-COPY target/demo-0.0.1-SNAPSHOT.jar demo-0.0.1-SNAPSHOT.jar
+COPY target/springboot-maven-images.jar springboot-maven-images.jar
 
 # Set the command to run the jar file
-ENTRYPOINT ["java", "-jar", "/demo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/springboot-maven-images.jar"]
